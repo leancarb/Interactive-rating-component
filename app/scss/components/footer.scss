@@ -1,0 +1,15 @@
+@use "../util" as *;
+
+.attribution {
+  font-size: rem(12);
+  text-align: center;
+
+  & a {
+    color: var(--orange);
+
+    &:hover {
+      color: hsla(25, 97%, 53%, 0.7);
+      transition: all 0.2s;
+    }
+  }
+}

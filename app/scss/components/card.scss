@@ -1,0 +1,13 @@
+@use "../util" as *;
+
+.card {
+  background: linear-gradient(
+    to bottom,
+    var(--card-bg-top),
+    var(--card-bg-bottom)
+  );
+  width: rem(412);
+  height: rem(418);
+  padding: rem(34);
+  border-radius: rem(24);
+}

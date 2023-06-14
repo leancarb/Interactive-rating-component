@@ -1,0 +1,30 @@
+@use "../util" as *;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #141519;
+  font-family: var(--font-overpass);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin: auto 0 rem(12) 0;
+  color: var(--white);
+}
+
+.display {
+  display: none !important;
+}

@@ -1,0 +1,76 @@
+@use "../util" as *;
+
+.rating {
+  &__star {
+    background-color: var(--bgs-inside-card);
+    padding: rem(15);
+    border-radius: 50%;
+    margin-bottom: rem(24);
+  }
+
+  &__heading {
+    font-size: rem(28);
+    color: var(--white);
+    margin-bottom: rem(20);
+  }
+
+  &__paragraph {
+    font-size: rem(15);
+    line-height: rem(24);
+    color: var(--lightgrey);
+    margin-bottom: rem(24);
+  }
+
+  &__numbers {
+    color: var(--lightgrey);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(24);
+
+    &-container {
+      font-weight: 700;
+      width: rem(52);
+      height: rem(52);
+      border-radius: 50%;
+      background-color: var(--bgs-inside-card);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--orange);
+        color: var(--white);
+
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  &__btn {
+    font-size: rem(14);
+    letter-spacing: rem(3);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--orange);
+    display: block;
+    padding: rem(15);
+    border-radius: rem(999);
+
+    &:hover {
+      cursor: pointer;
+      color: var(--orange);
+      background-color: var(--white);
+      transition: all 0.2s;
+    }
+  }
+
+  &__error {
+    margin: 0;
+    margin-top: rem(12);
+    text-align: center;
+  }
+}
