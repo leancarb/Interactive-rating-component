@@ -1,6 +1,6 @@
-// DOM selection
-const submit = document.querySelector(".rating__btn");
 const ratings = document.querySelectorAll(".rating__numbers-container");
+const submit = document.querySelector(".rating__btn");
+
 const sectionRating = document.querySelector(".rating");
 const sectionThanks = document.querySelector(".thanks");
 
@@ -8,19 +8,17 @@ const starSelected = document.querySelector(".thanks__selected-rating");
 let selectedRating;
 
 // Rating stars selection
-
-// Function to repeat the code in each possible star rating
 function selectRating(ratingElement) {
+  ratings.forEach((rating) => {
+    rating.classList.remove("selected");
+  });
   ratingElement.classList.add("selected");
-  if (selectedRating) {
-    selectRating.remove("selected");
-  }
+  selectedRating = ratingElement;
 }
 
-// Loop for each rating to add the click event listener
 ratings.forEach((rating) => {
   rating.addEventListener("click", function () {
-    selectRating(ratingElement);
+    selectRating(rating);
   });
 });
 
